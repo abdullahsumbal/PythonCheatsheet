@@ -23,6 +23,13 @@ all(x % 2 == 0 for x in nums)  # True
 nums = [3, 1, 2]
 sorted_nums = sorted(nums)      # [1, 2, 3]
 nums.sort()                     # nums is now [1, 2, 3]
+
+words = ["apple", "pear", "banana", "fig"]
+sorted_words = sorted(words, key=len)  # ['fig', 'pear', 'apple', 'banana']
+
+nums = [3, -1, 2]
+nums.sort(key=abs)
+# nums is now [ -1, 2, 3 ]
 ```
 
 ---

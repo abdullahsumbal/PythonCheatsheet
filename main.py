@@ -14,3 +14,12 @@ if __name__ == '__main__':
     print_hi('PyCharm')
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
+nums = [1,2,3,4,5]
+print(all(x % 2 == 0 for x in nums) )
+print(any([x % 2 == 0 for x in nums]) )
+
+
+
+s = "a=b=c"
+x = s.split("=", 6)
+print(x)   # 'a'
